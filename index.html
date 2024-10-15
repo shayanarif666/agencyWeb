@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--FancyBox-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+
+    <!-- Boxicon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Swiper Js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/favicon.png">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!--owl carousel-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>Al Mehdi Solutions</title>
+</head>
+
+<body>
+
+    <!-- Header Start -->
+    <header id="header">
+        <!-- Navigation Start -->
+        <nav id="navbar">
+            <div class="container d-flex">
+                <div class="logo">
+                    <a href="/">
+                        <img src="./assets/images/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="w-100">
+                    <div class="top-menu">
+                        <div class="d-flex align-items-center justify-content-between px-3 py-1">
+                            <div class="social-links">
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                            <div class="call-to-action">
+                                <p><i class="fa-solid fa-phone"></i> Make a call <strong class="ms-3">+92 334 0286524</strong>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-menu">
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="faq.html">FAQ's</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                        <div class="nav-manu">
+                            <i class="fa-solid fa-bars" id="openAsideMenu"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Navigation End -->
+
+        <!-- Showcase Section Start -->
+        <section id="showcase">
+            <div class="container">
+                <div class="showcase-content">
+                    <div class="showcase-content-effect" data-aos="zoom-in" data-aos-duration="1000"
+                        data-aos-offset="0"></div>
+                    <h6 data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0">Best Digital Agency</h6>
+                    <h1 data-aos="fade-up" data-aos-duration="1600" data-aos-offset="0">Grow Your <br> Digital
+                        <span>Agency</span>
+                    </h1>
+                    <p data-aos="fade-up" data-aos-duration="2000" data-aos-offset="0">We are premier digital agency
+                        dedicated <br> to elevating your online presence and driving growth <br> for
+                        your buisness.</p>
+                    <button class="btn-main" data-aos="fade-up" data-aos-duration="2200" data-aos-offset="0">Explore
+                        More</button>
+                </div>
+                <div class="showcase-content-vertical-effect"></div>
+                <div class="showcase-content-social-media-box">
+                    <button class="btn">Instagram</button>
+                    <button class="btn">Linkedin</button>
+                    <button class="btn">Facebook</button>
+                </div>
+            </div>
+        </section>
+        <!-- Showcase Section End -->
+
+    </header>
+    <!-- Header End -->
+
+    <!-- Sidebar For Mobile Menu Code Start -->
+    <aside id="aside">
+        <div class="aside-content">
+            <div class="aside-close">
+                <i class="fa-solid fa-xmark" id="closeAsideMenu"></i>
+            </div>
+            <div class="aside-items">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Services</a>
+                <a href="">FAQ's</a>
+                <a href="" class="contact">Contact</a>
+            </div>
+            <div class="aside-contact-detail">
+                <div class="call d-flex align-items-center">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="call-info ms-4 mt-3">
+                        <h6>Call Now</h6>
+                        <p>+92 334 0286524</p>
+                    </div>
+                </div>
+                <div class="email d-flex align-items-center">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div class="email-info ms-4 mt-3">
+                        <h6>Send Email</h6>
+                        <p>almehdisolutions@gmail.com</p>
+                    </div>
+                </div>
+                <div class="timing d-flex align-items-center">
+                    <i class="fa-regular fa-clock"></i>
+                    <div class="timing-info ms-4 mt-3">
+                        <h6>Timing</h6>
+                        <p>Mon-Sat 12:00 - 9:00, Sunday-closed</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="aside-footer-media">
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+
+        </div>
+    </aside>
+    <!-- Sidebar For Mobile Menu Code End -->
+
+
+    <!-- About Section Start -->
+    <section id="about">
+        <div class="container">
+
+            <div class="about-featured-row row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="custom-card">
+                        <div class="card-featured">
+                            <span>01</span>
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+                        <div class="card-info">
+                            <h4>Award winning agency</h4>
+                            <p>Innovative solutions that redefine success, crafted by our award-winning agency</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="custom-card">
+                        <div class="card-featured">
+                            <span>02</span>
+                            <i class='bx bx-medal'></i>
+                        </div>
+                        <div class="card-info">
+                            <h4>Best quality work</h4>
+                            <p>Consistently delivering the best quality work, setting industry standards</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="custom-card">
+                        <div class="card-featured">
+                            <span>03</span>
+                            <i class="fa-regular fa-face-smile"></i>
+                        </div>
+                        <div class="card-info">
+                            <h4>Satisfaction guarantee</h4>
+                            <p>Our satisfaction guarantee ensures exceptional service and results every time</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <h3>we Envision & Transofrm Your Business.</h3>
+                <div class="col-lg-6">
+                    <div class="about-img">
+                        <img src="./assets/images/about-featured-img.png" class="w-full" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-info">
+                        <h2 class="stylish-heading" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">
+                            <div class="stylish-dots">
+                                <div class="dot-icon">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="dot-icon">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+                            get to know us
+                        </h2>
+                        <h1 data-aos="fade-up" data-aos-duration="1200" data-aos-offset="0">Your Best Digital <br>
+                            Solution <span>Service</span> <br> Partner</h1>
+                        <p data-aos="fade-up" data-aos-duration="1500" data-aos-offset="0">At Al Mehdi Solutions, we
+                            specialize in crafting innovative digital solutions that drive
+                            growth and
+                            success for your business. From digital marketing to cutting-edge web development, our team
+                            is dedicated to helping you achieve your goals with expertise and precision.</p>
+
+                        <div class="experience" data-aos="fade-up" data-aos-duration="1800" data-aos-offset="0">
+                            <span>02+</span>
+                            <p>Years of working Experience <br> in this company</p>
+                        </div>
+
+                        <hr>
+                        <a href="#" class="btn-main" data-aos="fade-up" data-aos-duration="2000"
+                            data-aos-offset="0">Discover More</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+
+    <!-- Services Section Start -->
+    <section id="services">
+        <div class="owl-carousel owl-theme">
+            <div class="item service-content">
+                <img src="./assets/images/services/web-dev.webp" alt="">
+                <div class="img-effect"></div>
+                <div class="service-info">
+                    <h3>Web Development</h3>
+                </div>
+            </div>
+            <div class="item service-content">
+                <img src="./assets/images/services/graphic-design.jpg" alt="">
+                <div class="img-effect"></div>
+                <div class="service-info">
+                    <h3>Graphic Design</h3>
+                </div>
+            </div>
+            <div class="item service-content">
+                <img src="./assets/images/services/microsoft-crm.svg" alt="">
+                <div class="img-effect"></div>
+                <div class="service-info">
+                    <h3>Microsoft 365 CRM</h3>
+                </div>
+            </div>
+            <div class="item service-content">
+                <img src="./assets/images/services/seo.jpg" alt="">
+                <div class="img-effect"></div>
+                <div class="service-info">
+                    <h3>SEO Optimization</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+
+    <!-- Services Marquee Effect Start -->
+    <section id="marquee">
+        <div class="wrapper">
+            <div class="item item1">Development</div>
+            <div class="item item2">Designing</div>
+            <div class="item item3">Animations</div>
+            <div class="item item4">SEO</div>
+            <div class="item item5">Marketing</div>
+            <div class="item item6">Solutions</div>
+            <div class="item item7">Optimization</div>
+            <div class="item item8">Digital</div>
+        </div>
+    </section>
+    <!-- Services Marquee Effect End -->
+
+
+    <!-- FAQ About Section Start -->
+    <section id="aboutFAQ">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="aboutFAQ-info">
+                        <h2 class="stylish-heading">
+                            <div class="stylish-dots">
+                                <div class="dot-icon">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="dot-icon">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+                            Why Choose Us
+                        </h2>
+                        <h1>Perfect IT Technology <br> Solutions Here</h1>
+                        <div class="d-sm-flex align-items-sm-center">
+                            <img src="./assets/images/about-faq-img.jpg" class="w-full" alt="">
+                            <p class="ms-sm-4 ms-0 mt-sm-0 mt-4">There are many variations of passages of available but
+                                the majority have suffered
+                                alteration in some form, by injected hum randomised words</p>
+                        </div>
+                        <div class="aboutFaq-progress mt-5">
+                            <h3 class="mb-3">Development & Designing</h3>
+                            <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75"
+                                aria-valuemin="0" aria-valuemax="100">
+                                <div class="progress-bar" style="width: 85%">85%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="aboutFAQ-faq">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <span class="me-2">01.</span> What services does a digital agency offer?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Digital agencies typically provide services such as website design and
+                                            development, digital marketing (including SEO, SEM, social media marketing),
+                                            content creation, and analytics.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <span class="me-2">02.</span> How can a digital agency benefit my business?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>A digital agency can enhance your online presence, attract more customers
+                                            through targeted marketing strategies, improve conversion rates, and
+                                            ultimately increase revenue.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <span class="me-2">03.</span> What should I consider when choosing a digital
+                                        agency?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Factors to consider include the agency's portfolio of past work, expertise in
+                                            your industry, client testimonials, pricing structure, and their approach to
+                                            communication and project management.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ About Section End -->
+
+
+    <!-- Service Card Box Section Start -->
+    <section id="serviceCard">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 mb-5">
+                    <div class="serviceCard-content text-center">
+                        <h2 class="stylish-heading justify-content-center">
+                            <div class="stylish-dots">
+                                <div class="dot-icon">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
+                                <div class="dot-icon">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
+                            </div>
+                            Services we’re offering
+                        </h2>
+                        <h1>We’re Dedicated to Serve <br> you <span>All Time</span></h1>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                    <div class="serviceCard-box">
+                        <i class="fa-solid fa-pen-nib"></i>
+                        <h6>Designing</h6>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                    <div class="serviceCard-box">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h6>Development</h6>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                    <div class="serviceCard-box">
+                        <i class="fa-solid fa-droplet"></i>
+                        <h6>Animation</h6>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                    <div class="serviceCard-box">
+                        <i class="fa-solid fa-database"></i>
+                        <h6>Application</h6>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                    <div class="serviceCard-box">
+                        <i class="fa-solid fa-people-arrows"></i>
+                        <h6>Solutions</h6>
+                    </div>
+                </div>
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                    <div class="serviceCard-box">
+                        <i class="fa-solid fa-medal"></i>
+                        <h6>Quality</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Service Card Box Section End -->
+
+
+    <!-- Footer Start -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="footer-about">
+                        <h6>About</h6>
+                        <p>At Al Mehdi Solutions, we understand that choosing the right partner for your business.</p>
+                        <div class="social-buisness">
+                            <i class="fa-brands fa-twitter me-2"></i>
+                            <i class="fa-brands fa-linkedin me-2"></i>
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="footer-links">
+                        <h6>Explore</h6>
+                        <a href="">About Company</a>
+                        <a href="">Services</a>
+                        <a href="">FAQ</a>
+                        <a href="">Contact</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="footer-portfolio">
+                        <h6>Portfolio</h6>
+                        <div class="portfolio">
+                            <a href="./assets/images/portfolio/portfolio (1).PNG" data-fancybox="gallery">
+                                <img src="./assets/images/portfolio/portfolio (1).PNG" class="w-full me-2 mb-2" alt="">
+                            </a>
+                            <a href="./assets/images/portfolio/portfolio (2).png" data-fancybox="gallery">
+                                <img src="./assets/images/portfolio/portfolio (2).png" class="w-full me-2 mb-2" alt="">
+                            </a>
+                            <a href="./assets/images/portfolio/portfolio (3).PNG" data-fancybox="gallery">
+                                <img src="./assets/images/portfolio/portfolio (3).PNG" class="w-full me-2 mb-2" alt="">
+                            </a>
+                            <a href="./assets/images/portfolio/portfolio (6).png" data-fancybox="gallery">
+                                <img src="./assets/images/portfolio/portfolio (6).png" class="w-full me-2 mb-2" alt="">
+                            </a>
+                            <a href="./assets/images/portfolio/portfolio (7).jpeg" data-fancybox="gallery">
+                                <img src="./assets/images/portfolio/portfolio (7).jpeg" class="w-full me-2 mb-2" alt="">
+                            </a>
+                            <a href="./assets/images/portfolio/portfolio (5).jpg" data-fancybox="gallery">
+                                <img src="./assets/images/portfolio/portfolio (5).jpg" class="w-full me-2 mb-2" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="footer-address">
+                        <h6>Contact</h6>
+                        <address>R-11 Sector 11-C2 North Karachi, Karachi, Pakistan</address>
+                        <div class="email mb-3">
+                            <i class="fa-regular fa-envelope"></i>
+                            <span>almehdisolutions@gmail.com</span>
+                        </div>
+                        <div class="phone">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+92 334 0286524</span>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="col-12">
+                    <p class="text-center">© Copyright 2024 by mufdigital.com</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+
+
+
+    <!--Jquery cdn owl carousel-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--owl carousel-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Swiper Js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!--Fancybox-->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    <!-- Custom Js -->
+    <script src="./assets/js/script.js" defer></script>
+    <script src="./assets/js/aside.js" defer></script>
+
+</body>
+
+</html>
