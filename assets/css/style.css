@@ -311,7 +311,7 @@ a.contact {
     justify-content: space-between;
 }
 
-.aside-footer-media i {
+.aside-footer-media a {
     padding: .6rem 1.5rem;
     border-left: 1px solid #333;
     color: #fff;
@@ -321,7 +321,7 @@ a.contact {
     cursor: pointer;
 }
 
-.aside-footer-media i:hover {
+.aside-footer-media a:hover {
     color: #56ae38;
 }
 
@@ -380,7 +380,7 @@ Showcase Section
     z-index: 1 !important;
 }
 
-.showcase-content-social-media-box button {
+.showcase-content-social-media-box a {
     color: #fff;
     text-decoration: none !important;
     transform: rotate(90deg);
@@ -392,7 +392,7 @@ Showcase Section
     display: block;
 }
 
-.showcase-content-social-media-box button:hover {
+.showcase-content-social-media-box a:hover {
     color: #111 !important;
 }
 
@@ -898,6 +898,10 @@ Footer Section
 #footer .social-buisness {
     display: flex;
     align-items: center;
+}
+
+.social-buisness a {
+    text-decoration: none !important;
 }
 
 .social-buisness i {

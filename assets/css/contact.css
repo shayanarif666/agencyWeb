@@ -461,6 +461,8 @@ Contact Form Section
 .contact-form-detail textarea {
     height: 200px;
 }
+
+
 /* ################################
 Footer Section
 ##################################*/
@@ -497,6 +499,10 @@ Footer Section
 #footer .social-buisness {
     display: flex;
     align-items: center;
+}
+
+.social-buisness a {
+    text-decoration: none !important;
 }
 
 .social-buisness i {
@@ -555,6 +561,7 @@ Footer Section
     color: #ccc;
     margin-top: 3rem;
 }
+
 
 
 

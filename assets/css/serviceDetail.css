@@ -594,6 +594,10 @@ Footer Section
     align-items: center;
 }
 
+.social-buisness a {
+    text-decoration: none !important;
+}
+
 .social-buisness i {
     color: #fff;
     background-color: #333;
@@ -650,6 +654,8 @@ Footer Section
     color: #ccc;
     margin-top: 3rem;
 }
+
+
 
 
 
