@@ -342,7 +342,7 @@ a.contact {
     justify-content: space-between;
 }
 
-.aside-footer-media i {
+.aside-footer-media a {
     padding: .6rem 1.5rem;
     border-left: 1px solid #333;
     color: #fff;
@@ -352,7 +352,7 @@ a.contact {
     cursor: pointer;
 }
 
-.aside-footer-media i:hover {
+.aside-footer-media a:hover {
     color: #56ae38;
 }
 
