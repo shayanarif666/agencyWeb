@@ -1,4 +1,3 @@
-let slidesPerView = 4;
 
 // function To Handle Slides
 const sliderHandler = () => {
@@ -6,7 +5,7 @@ const sliderHandler = () => {
         effect: 'coverflow',
         grabCursor: true,
         centeredSlides: true,
-        slidesPerView: slidesPerView,
+        slidesPerView: 4,
         autoplay: true,
         initialSlide: 2,
         preventClicks: true,
@@ -21,29 +20,25 @@ const sliderHandler = () => {
         pagination: {
             el: '.swiper-pagination',
         },
+
+        breakpoints: {
+            993: {
+                slidesPerView: 3,
+                initialSlide: 3,
+            },
+            // For screens between 1200px and 769px
+            576: {
+                slidesPerView: 2,
+                initialSlide: 2,
+            },
+            // For screens 768px and below
+            0: {
+                slidesPerView: 1,
+                initialSlide: 1,
+            }
+        }
     });
 }
 
 
-const handleScreenWidth = (e) => {
-    if (e.target.innerWidth > 1400) {
-        slidesPerView = 4;
-        sliderHandler();
-    } else if (e.target.innerWidth <= 1400 && e.target.innerWidth > 1200) {
-        slidesPerView = 3;
-        sliderHandler();
-    } else if (e.target.innerWidth <= 1200 && e.target.innerWidth > 768) {
-        slidesPerView = 2;
-        sliderHandler();
-    }
-    else if (e.target.innerWidth <= 768 && e.target.innerWidth > 500) {
-        slidesPerView = 2;
-        sliderHandler();
-    } else {
-        slidesPerView = 1;
-        sliderHandler();
-    }
-}
-
 sliderHandler();
-window.addEventListener("resize", handleScreenWidth)
