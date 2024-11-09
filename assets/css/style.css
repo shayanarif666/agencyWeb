@@ -106,7 +106,6 @@ Navbar Styling Portion
     transition: all .4s ease-in-out;
     height: 100%;
     max-height: 10vh;
-    z-index: 9999 !important;
 }
 
 #navbar .container {
@@ -338,7 +337,7 @@ Showcase Section
     top: 50%;
     left: 8%;
     transform: translate(0%, -50%);
-    z-index: 999;
+    z-index: 99;
     padding: 3rem;
 }
 
@@ -863,6 +862,97 @@ Service Card Section
 }
 
 /* ################################
+Blogs Section
+##################################*/
+#blogs {
+    background-color: #222;
+    padding: 5rem 0 3rem;
+    height: 500px;
+}
+.blog-card {
+    cursor: pointer;
+}
+.blog-card:hover .blog-img img {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.blog-img {
+    position: relative;
+    overflow: hidden;
+}
+.blog-img img {
+    transition: all .4s ease-in-out;
+}
+.blog-img .img-effect {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(17, 17, 17, .4);
+    transition: all .3s ease-in-out;
+}
+.blog-card:hover .img-effect {
+    background: linear-gradient(rgb(59, 169, 22, .4), rgb(17, 17, 17, .4));
+}
+.blog-date {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    background-color: rgb(59, 169, 22, .5);
+}
+.blog-date h2 {
+    background-color: #3ba916;
+    color: #fff;
+    padding: .7rem 1rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.blog-date h2 span {
+    display: block;
+    margin-top: 0rem;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.blog-card .blog-body {
+    background-color: #212529;
+}
+.blog-body-content {
+    padding: 2rem;
+}
+.blog-card i {
+    color: #3ba916;
+}
+.blog-card span {
+    color: #666;
+    font-size: .9rem;
+}
+.blog-card h3 {
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+.blog-body-btn {
+    background-color: #444;
+    padding: .7rem 1rem;
+}
+.blog-body-btn button {
+    font-size: .8rem;
+}
+.blog-body-btn button i {
+    margin-top: .2rem;
+}
+#overflowBlogs {
+    background-color: #111;
+    height: 500px;
+}
+
+/* ################################
 Footer Section
 ##################################*/
 #footer {
@@ -1010,6 +1100,11 @@ Footer Section
     .showcase-content-vertical-effect,
     .showcase-content-social-media-box {
         display: none !important;
+    }
+
+    /* Blogs Section */
+    #blogs {
+        height: 100%;
     }
 }
 
