@@ -23,11 +23,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./assets/images/favicon.png">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- TinyMCE -->
+    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.snow.css" rel="stylesheet" />
 
     <!--owl carousel-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
@@ -39,13 +42,12 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Custom Css -->
-    <link rel="stylesheet" href="./assets/css/serviceDetail.css">
+    <link rel="stylesheet" href="./assets/css/blogDetails.css">
 
-    <title>Web Design & Development - Al Mehdi Solutions</title>
+    <title>Al Mehdi Solutions - Blogs</title>
 </head>
 
 <body>
-
 
     <!-- Header Start -->
     <header id="header">
@@ -138,7 +140,7 @@
                 <a href="about.html">About</a>
                 <a href="services.html">Services</a>
                 <a href="faq.html">FAQ's</a>
-                <a href="addBlog.html">Add Blog</a>
+                <a href="viewBlogs.html">blogs</a>
                 <a href="contact.html" class="contact">Contact</a>
             </div>
             <div class="aside-contact-detail">
@@ -177,266 +179,144 @@
     </aside>
     <!-- Sidebar For Mobile Menu Code End -->
 
-    <!-- Service Details Section Start -->
-    <section id="servicesDetail">
+
+    <!-- Blog Details Code Start -->
+    <section id="blogDetail">
         <div class="container">
             <div class="row g-4">
-                <div class="col-lg-6">
-                    <div class="service-img">
-                        <img src="./assets/images/service-details.jpg" alt="">
+                <div class="col-lg-8">
+                    <div class="blog-info">
+                        <img src="./assets/images/blogs/news-3.jpg" class="w-100" alt="">
+                        <div class="d-flex align-items-center mb-3 mt-4">
+                            <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-user"></i>
+                                <h6>Admin</h6>
+                            </div>
+                            <div class="d-flex align-items-center ms-3">
+                                <i class="fa-solid fa-comments"></i>
+                                <h6>02 Comments</h6>
+                            </div>
+                        </div>
+                        <h2 class="mb-4 mt-3">Delivering the best web design agency</h2>
+                        <p>Mauris non dignissim purus, ac commodo diam. Donec sit amet lacinia nulla. Aliquam quis purus
+                            in justo pulvinar tempor. Aliquam tellus nulla, sollicitudin at euismod nec, feugiat at
+                            nisi. Quisque vitae odio nec lacus interdum tempus. Phasellus a rhoncus erat. Vivamus vel
+                            eros vitae est aliquet pellentesque vitae et nunc. Sed vitae leo vitae nisl pellentesque
+                            semper.</p>
+                        <p class="my-4">Mauris non dignissim purus, ac commodo diam. Donec sit amet lacinia nulla.
+                            Aliquam quis purus
+                            in justo pulvinar tempor. Aliquam tellus nulla, sollicitudin at euismod nec, feugiat at
+                            nisi. Quisque vitae odio nec lacus interdum tempus. Phasellus a rhoncus erat. Vivamus vel
+                            eros vitae est aliquet pellentesque vitae et nunc. Sed vitae leo vitae nisl pellentesque
+                            semper.</p>
+                        <p>Mauris non dignissim purus, ac commodo diam. Donec sit amet lacinia nulla. Aliquam quis purus
+                            in justo pulvinar tempor. Aliquam tellus nulla, sollicitudin at euismod nec, feugiat at
+                            nisi. Quisque vitae odio nec lacus interdum tempus. Phasellus a rhoncus erat. Vivamus vel
+                            eros vitae est aliquet pellentesque vitae et nunc. Sed vitae leo vitae nisl pellentesque
+                            semper.</p>
+                        <hr>
+                        <div class="social-icons">
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+
+                        <div class="people-comments">
+                            <h2>2 Comments</h2>
+                            <div class="d-flex mt-5">
+                                <img src="./assets/images/blogs/thumb-1.jpg" alt="">
+                                <div class="people ms-5">
+                                    <h5>Kevin Martin</h5>
+                                    <p class="mt-3">Mauris non dignissim purus, ac commodo diam. Donec sit amet lacinia
+                                        nulla.
+                                        Aliquam quis purus in justo pulvinar tempor. Aliquam tellus nulla, sollicitudin
+                                        at euismod.</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="d-flex mt-5">
+                                <img src="./assets/images/blogs/thumb-2.jpg" alt="">
+                                <div class="people ms-5">
+                                    <h5>Sarah Albert</h5>
+                                    <p class="mt-3">Mauris non dignissim purus, ac commodo diam. Donec sit amet lacinia
+                                        nulla. Aliquam quis purus in justo pulvinar tempor. Aliquam tellus nulla,
+                                        sollicitudin at euismod.</p>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+
+                        <h2>Leave a Comment</h2>
+
+                        <form action="" class="mt-4">
+                            <div class="d-flex">
+                                <input type="name" class="form-control me-3" placeholder="Enter Name">
+                                <input type="email" class="form-control" placeholder="Enter Email">
+                            </div>
+                            <textarea name="" class="form-control mt-4" placeholder="Enter Message" id=""></textarea>
+                            <button class="secondary-btn mt-4" data-aos-once="true" data-aos="zoom-in" data-aos-duration="500">Leave Comment</button>
+                        </form>
+
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="service-detail ps-4">
-                        <h6>about service</h6>
-                        <h1>We Provide Best <br>
-                            Animations</h1>
-                        <div class="service-description-list mt-5 d-sm-flex align-items-center justify-content-between">
-                            <div class="service-description me-4">
-                                <span>01.</span>
-                                <h5>Concept Art/ Storyboard</h5>
-                                <p>ITS 2D/3D Process begins by setting clear project scope as defined by our client.
-                                    The
-                                    step proceeds with a discussion of concept art design ideas.</p>
-                            </div>
-                            <div class="service-description">
-                                <span>02.</span>
-                                <h5>Animatics/ Asset Creation</h5>
-                                <p>Assets are specially modeled with 3D CAD software tools. Other than this, assets are
-                                    customized as per client requirements.</p>
+                <div class="col-lg-4">
+                    <div class="latest-posts">
+                        <h5 class="fw-bold">Latest Posts</h5>
+                        <div class="blog mt-4">
+                            <div class="d-flex">
+                                <img src="./assets/images/blogs/news-1.jpg" alt="">
+                                <div class="blog-detail ms-4">
+                                    <div class="writer d-flex align-items-center">
+                                        <i class="fa-solid fa-user"></i>
+                                        <h6>Admin</h6>
+                                    </div>
+                                    <h5>Top crypto exchange influencers</h5>
+                                </div>
                             </div>
                         </div>
-                        <div
-                            class="service-description-list mt-sm-5 mt-4 d-sm-flex align-items-center justify-content-between">
-                            <div class="service-description me-4">
-                                <span>03.</span>
-                                <h5>Creative Editing & Composition</h5>
-                                <p>ITS Creative Team takes hold of editing and composition of the client animation
-                                    projects with care and skill.</p>
+                        <div class="blog mt-4">
+                            <div class="d-flex">
+                                <img src="./assets/images/blogs/news-2.jpg" alt="">
+                                <div class="blog-detail ms-4">
+                                    <div class="writer d-flex align-items-center">
+                                        <i class="fa-solid fa-user"></i>
+                                        <h6>Admin</h6>
+                                    </div>
+                                    <h5>Top crypto exchange influencers</h5>
+                                </div>
                             </div>
-                            <div class="service-description">
-                                <span>04.</span>
-                                <h5>Design Art Creation</h5>
-                                <p>Our Designing Team considers artwork ideas and frameworks to set your project
-                                    boundaries and allocate resources.</p>
+                        </div>
+                        <div class="blog mt-4">
+                            <div class="d-flex">
+                                <img src="./assets/images/blogs/news-3.jpg" alt="">
+                                <div class="blog-detail ms-4">
+                                    <div class="writer d-flex align-items-center">
+                                        <i class="fa-solid fa-user"></i>
+                                        <h6>Admin</h6>
+                                    </div>
+                                    <h5>Top crypto exchange influencers</h5>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="ps-4 mt-4">
-                        <a href="contact.html" class="secondary-btn" data-aos="zoom-in" data-aos-duration="1000"
-                            data-aos-once="true">Contact Now</a>
+
+                    <div class="categories mt-5">
+                        <h5 class="fw-bold">Categories</h5>
+                        <ul>
+                            <li><a href="" class="active">Buisness</a></li>
+                            <li><a href="">Freelancing</a></li>
+                            <li><a href="">Motivation</a></li>
+                            <li><a href="">Technology</a></li>
+                            <li><a href="">Crises</a></li>
+                        </ul>
                     </div>
+
                 </div>
             </div>
         </div>
     </section>
-    <!-- Service Details Section End -->
-
-
-    <!-- Service Offering Start -->
-    <section id="offer">
-        <div class="container">
-            <div class="row g-4">
-
-                <div class="offer-intro text-center mb-5">
-                    <h6>our services</h6>
-                    <h2>We Offer a Wide <br>
-                        Variety of IT Services</h2>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="offer-detail">
-                        <div class="card">
-                            <h5>Flash Rigging and Animation</h5>
-                            <p>Proof-editing is done to eliminate any kind of major or minor flash, dust, and
-                                distortion.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="offer-detail">
-                        <div class="card">
-                            <h5>Layout</h5>
-                            <p>Sketching and Drafting is a compulsory step within both 2D and 3D animation projects. It
-                                is done by a well-defined team of artists and animators.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="offer-detail">
-                        <div class="card">
-                            <h5>Final Render</h5>
-                            <p>The Project Manager makes sure that all these steps are taken care of within the
-                                estimated time duration and the result is saved within client-asked formats such as PDF,
-                                PNG, JPEG, TIFF, and more.
-
-                                You can earn unlimited design revisions by partnering with Information Transformation
-                                Service (ITS).</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- Service Offering End -->
-
-
-    <!-- Pricing Packages Start -->
-    <section id="pricing">
-        <div class="container">
-
-            <div class="offer-intro text-center mb-5">
-                <h6>our Packages</h6>
-                <h2>We Offer a Wide <br>
-                    Variety of Packages</h2>
-            </div>
-
-            <!-- Slider main container -->
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                        <h6>Startup Package</h6>
-                        <div class="slider-package">
-                            <p>Suitable for potential super-startups and brand revamps for companies</p>
-                            <h1>$399.99</h1>
-                            <ul>
-                                <li>Social Media strategy will be devised</li>
-                                <li>Competitor Analysis</li>
-                                <li>Copywriting</li>
-                                <li>Content Plan Creation</li>
-                                <li>Social Media Posts (06/month)</li>
-                                <li>Facebook Ad Campaigns will be set up</li>
-                                <li>Community Management</li>
-                                <li>Page Management (Facebook, Instagram and Twitter)</li>
-                                <li>Page Optimization</li>
-                                <li>Tracking Setup</li>
-                                <li>Facebook Shop Creation</li>
-                                <li>Lead Form Creation</li>
-                                <li>1000 Likes on Facebook page</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <h6>Professional Package</h6>
-                        <div class="slider-package">
-                            <p>Suitable for potential super-startups and brand revamps for companies</p>
-                            <h1>$649.99</h1>
-                            <ul>
-                                <li>Social Media strategy will be devised</li>
-                                <li>Competitor Analysis</li>
-                                <li>Copywriting</li>
-                                <li>Content Plan Creation</li>
-                                <li>Social Media Posts (10/month)</li>
-                                <li>Facebook Ad Campaigns will be set up</li>
-                                <li>Community Management</li>
-                                <li>Page Optimization & Moderation</li>
-                                <li>Page Moderation</li>
-                                <li>Facebook Ad Campaign Optimization</li>
-                                <li>Facebook Shop Creation</li>
-                                <li>1000 Likes on Instagram</li>
-                                <li>Lead Form Creation</li>
-                                <li>1000 Likes on Facebook page</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <h6>Elite Package</h6>
-                        <div class="slider-package">
-                            <p>Suitable for potential super-startups and brand revamps for companies</p>
-                            <h1>$999.99</h1>
-                            <ul>
-                                <li>Social Media strategy will be devised</li>
-                                <li>Competitor Analysis</li>
-                                <li>Copywriting</li>
-                                <li>Content Plan Creation</li>
-                                <li>Social Media Posts (15/month)</li>
-                                <li>Facebook Ad Campaigns will be set up</li>
-                                <li>Social Media Listening</li>
-                                <li>Page Optimization & Moderation</li>
-                                <li>Facebook Ad Campaign Optimization</li>
-                                <li>Facebook Shop Creation</li>
-                                <li>Facebook Ads A/B Testing</li>
-                                <li>10000 Likes on Facebook page</li>
-                                <li>2000 Likes on Instagram</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <h6>Buisness Package</h6>
-                        <div class="slider-package">
-                            <p>Suitable for potential super-startups and brand revamps for companies</p>
-                            <h1>$1399.99</h1>
-                            <ul>
-                                <li>Conceptual & Dynamic Website</li>
-                                <li>30+ Stock Images</li>
-                                <li>Contact Form</li>
-                                <li>Slider</li>
-                                <li>15+ Banners Design</li>
-                                <li>5+ Jquery Slider</li>
-                                <li>Online Reservation/Appointment Tool</li>
-                                <li>Online Payment Integration</li>
-                                <li>Custom Forms</li>
-                                <li>Lead Capturing Forms</li>
-                                <li>Striking Hover Effects</li>
-                                <li>Social Media Integration</li>
-                                <li>Search Engine Submission</li>
-                                <li>Google Friendly Sitemap</li>
-                                <li>Unique Design Guarantee</li>
-                                <li>100% Satisfaction Guarantee</li>
-                                <li>100% Money Back Guarantee</li>
-                                <li>100% Mobile Responsive</li>
-                                <li>48 to 72 hours TAT</li>
-                                <li>100% Custom Designs (No Template)</li>
-                                <li>Complete Deployment</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <h6>Buisness Pro Package</h6>
-                        <div class="slider-package">
-                            <p>Suitable for potential super-startups and brand revamps for companies</p>
-                            <h1>$2100.99</h1>
-                            <ul>
-                                <li>Conceptual & Dynamic Website</li>
-                                <li>Unlimited Stock Images</li>
-                                <li>Custom Video Animations</li>
-                                <li>Contact Form</li>
-                                <li>Slider</li>
-                                <li>25+ Banners Design</li>
-                                <li>10+ Jquery Slider</li>
-                                <li>Online Reservation/Appointment Tool</li>
-                                <li>Online Payment Integration</li>
-                                <li>Custom Forms</li>
-                                <li>Lead Capturing Forms</li>
-                                <li>Striking Hover Effects</li>
-                                <li>Social Media Integration</li>
-                                <li>Search Engine Submission</li>
-                                <li>Google Friendly Sitemap</li>
-                                <li>Unique Design Guarantee</li>
-                                <li>100% Satisfaction Guarantee</li>
-                                <li>100% Money Back Guarantee</li>
-                                <li>100% Mobile Responsive</li>
-                                <li>48 to 72 hours TAT</li>
-                                <li>100% Custom Designs (No Template)</li>
-                                <li>Complete Deployment</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-
-
-        </div>
-    </section>
-    <!-- Pricing Packages End -->
-
+    <!-- Blog Details Code End -->
 
 
     <!-- Footer Start -->
@@ -546,7 +426,7 @@
     <!-- Custom Js -->
     <script src="./assets/js/script.js" defer></script>
     <script src="./assets/js/aside.js" defer></script>
-    <script src="./assets/js/slider.js" defer></script>
+
 
 </body>
 
